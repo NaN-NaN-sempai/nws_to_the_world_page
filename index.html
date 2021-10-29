@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- HELLO! -->
+<html lang="en">
+<head>
+    <title>NWS to the world!</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./imgs/NWS_to_the_world_Circular.png" />
+    <style>
+        body {
+            background: #4b92db;
+        }
+        img {
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+        }
+        .change .theOne, .change .theBg {
+            filter: none;
+            transition: opacity 1s, filter 1s;
+        }
+        .change .theOne {
+            opacity: 0;
+            -webkit-mask-image: radial-gradient(transparent 30%, black);
+            mask-image: radial-gradient(transparent 30%, black);
+        }
+        .change:hover .theOne{
+            filter: saturate(5);
+            box-shadow: 0 0 2px #00b9ff;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    
+    <a class="change" href="https://discord.gg/YSJtYae">
+        <img class="theBg" src="./imgs/NWS_to_the_world.png" alt="NWS_to_the_world Image">
+        <img class="theOne" src="./imgs/NWS_to_the_world_Circular.png" alt="NWS_to_the_world Image">
+    </a>
+    
+</body>
+</html>
